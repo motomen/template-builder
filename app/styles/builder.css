@@ -1,0 +1,26 @@
+.builder-canvas {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.builder-templates {
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.module-canvas {
+    padding: 10px;
+}
+
+.element-content {
+    height: 30px;
+    color: blue;
+}
+
+.element-title {
+    text-align: center;
+}
+

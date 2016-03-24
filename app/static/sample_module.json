@@ -1,0 +1,149 @@
+{
+  "1": {
+    "name": "My company",
+    "typeModule": "header",
+    "type": "td",
+    "style": "BORDER-BOTTOM: #dbdbdb 0px hidden; TEXT-ALIGN: center; BORDER-LEFT: #dbdbdb 0px hidden; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: transparent; PADDING-LEFT: 15px; WIDTH: 100%; PADDING-RIGHT: 15px; VERTICAL-ALIGN: top; BORDER-TOP: #dbdbdb 0px hidden; BORDER-RIGHT: #dbdbdb 0px hidden; PADDING-TOP: 0px",
+    "elements": {
+      "1": {
+        "type": "a",
+        "href": "#",
+        "style": "text-decoration:none",
+        "elements": {
+          "1": {
+            "type": "img",
+            "src": "http://www.bostonbestrate.com/assets/img/logo1.png",
+            "alt": "company_name",
+            "style": "float:left;BORDER-BOTTOM: #dbdbdb 0px hidden; BORDER-LEFT: #dbdbdb 0px hidden; BACKGROUND-COLOR: transparent; MARGIN: 2px; BORDER-TOP: #dbdbdb 0px hidden; BORDER-RIGHT: #dbdbdb 0px hidden; width:25%"
+          }
+        }
+      },
+      "2": {
+        "type": "div",
+        "style": "float:left;margin-top:25px; margin-left:-25px",
+        "elements": {
+          "1": {
+            "type": "span",
+            "style": "margin-left:35px;color: #0a5c89;font-size: 13px;font-weight: bold;",
+            "elements": {
+              "1": {
+                "type": "text",
+                "content": "Toll Free"
+              },
+              "2": {
+                "type": "span",
+                "style": "color: #f36a13;font-size: 20px;font-weight: 600;",
+                "elements": {
+                  "1": {
+                    "type": "text",
+                    "content": "1.877.787.3528"
+                  }
+                }
+              }
+            }
+          },
+          "2": {
+            "type": "br"
+          },
+          "3": {
+            "type": "span",
+            "style": "color: #0a5c89;font-size: 13px;font-weight: bold;",
+            "elements": {
+              "1": {
+                "type": "text",
+                "content": "Local"
+              },
+              "2": {
+                "type": "span",
+                "style": "color: #f36a13;font-size: 20px;font-weight: 600;",
+                "content": "617.787.3528"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "type": "div",
+        "style": "float:right;margin-top:10px",
+        "elements": {
+          "1": {
+            "type": "a",
+            "style": "text-decoration:none",
+            "href": "http://www.yelp.com/biz/boston-best-rate-movers-allston",
+            "elements": {
+              "1": {
+                "type": "img",
+                "style": "cursor:pointer;",
+                "src": "http://www.bostonbestrate.com/assets/img/yelp.png"
+              }
+            }
+          },
+          "2": {
+            "type": "img",
+            "src": "http://www.bostonbestrate.com/assets/img/facebook_logo.png",
+            "style": "cursor:pointer;"
+          },
+          "3": {
+            "type": "a",
+            "style": "text-decoration:none",
+            "href": "https://plus.google.com/103740156389559864391/about",
+            "elements": {
+              "1": {
+                "type": "img",
+                "src": "http://www.bostonbestrate.com/assets/img/logo_gp.png",
+                "style": "cursor:pointer;"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "2": {
+    "name": "My company",
+    "typeModule": "body",
+    "type": "td",
+    "style": "BORDER-LEFT: #dbdbdb 0px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #feffff; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #dbdbdb 1px solid; BORDER-RIGHT: #dbdbdb 0px solid; PADDING-TOP: 0px",
+    "elements": {
+      "1": {
+        "type": "table",
+        "style": "width: 100%; border: 0",
+        "elements": {
+          "1": {
+            "type": "tr",
+            "elements": {
+              "1": {
+                "type": "td",
+                "style": "WIDTH:450px;BACKGROUND:#ffffff;PADDING-BOTTOM:10px;PADDING-TOP:10px;PADDING-LEFT:10px;PADDING-RIGHT:10px; vertical-align: top; align-content: left",
+                "elements": {
+                  "1": {
+                    "type": "h3",
+                    "style": "COLOR:#111111;FONT:bold 12px/15px Verdana,Arial,Helvetica,sans-serif",
+                    "content": "Greetings $first_name,"
+                  },
+                  "2": {
+                    "type": "p",
+                    "style": "COLOR:#111111;FONT:12px/19px Verdana,Arial,Helvetica,sans-serif",
+                    "elements": {
+                      "1": {
+                        "type": "text",
+                        "content": "Lauran Swiss here, your relocation specialist. Thanks for considering $company_name for your move."
+                      },
+                      "2": {
+                        "type": "br"
+                      },
+                      "3": {
+                        "type": "text",
+                        "content": "First, a couple things to take note of:"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
