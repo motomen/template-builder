@@ -201,7 +201,7 @@
                               },
                               "3": {
                                 "type": "text",
-                                "content": "Password: "
+                                "content": " Password: "
                               },
                               "4": {
                                 "type": "strong",
@@ -244,12 +244,83 @@
                             "content": "Thank you again,”"
                           }
                         }
+                      },
+                      "3": {
+                        "type": "strong",
+                        "style": "COLOR:#313131;FONT:bold 12px/19px Verdana,Arial,Helvetica,sans-serif",
+                        "elements": {
+                          "1": {
+                            "type": "text",
+                            "content": "Steve Davis -"
+                          },
+                          "2": {
+                            "type": "br"
+                          },
+                          "3": {
+                            "type": "text",
+                            "content": "Cambridge, MA"
+                          }
+                        }
+                      },
+                      "4": {
+                        "type": "a",
+                        "style": "COLOR:#ff6719;FONT:12px/19px Verdana,Arial,Helvetica,sans-serif",
+                        "href": "mailto:sdavis@promnetwork.com?Subject=Hello%20again",
+                        "elements": {
+                          "1": {
+                            "type": "text",
+                            "content": "sdavis@promnetwork.com"
+                          }
+                        }
+                      },
+                      "5": {
+                        "type": "br"
+                      },
+                      "6": {
+                        "type": "br"
+                      },
+                      "7": {
+                        "type": "a",
+                        "style": "TEXT-DECORATION:none;COLOR:#ff6719;TEXT-ALIGN:right;FONT:12px/19px Verdana,Arial,Helvetica,sans-serif",
+                        "href": "http://www.bostonbestrate.com",
+                        "content": "View More"
                       }
                     }
                   }
                 }
               }
             }
+          }
+        }
+      }
+    }
+  },
+  "3": {
+    "name": "My company",
+    "typeModule": "footer",
+    "type": "td",
+    "style": "column-span: 4; border-top:1px solid #ddd; padding:30px 0px; padding: 20px 20px;",
+    "elements": {
+      "1": {
+        "type": "p",
+        "style": "color:#797f7f; font:12px/1.5em Open Sans,Helvetica Neue,arial,sans-serif; margin:1em 0; text-align:center;",
+        "content": "EMAIL: info@bostonbestrate.com PHONE:(617) 787-3528 LICENSING INFORMATION MDPU: #31391 DOT #1718049"
+      },
+      "2": {
+        "type": "div",
+        "style": "margin-left: 250px;",
+        "elements": {
+          "1": {
+            "type": "img",
+            "style": "width: 100px;",
+            "src": "http://www.bostonbestrate.com/assets/img/amsatran.png",
+            "alt": "Moving America Professionall"
+          },
+          "2": {
+            "type": "img",
+            "style": "width: 150px;",
+            "src": "http://www.bostonbestrate.com/assets/img/promove.png",
+            "alt": "Moving America Professionally"
           }
         }
       }
