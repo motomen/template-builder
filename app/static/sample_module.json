@@ -135,6 +135,115 @@
                       "3": {
                         "type": "text",
                         "content": "First, a couple things to take note of:"
+                      },
+                      "4": {
+                        "type": "div",
+                        "style": "padding: 5px;padding-left:0px;",
+                        "elements": {
+                          "1": {
+                            "type": "ul",
+                            "style": "margin-top:0px;COLOR:#111111;FONT:12px/19px Verdana,Arial,Helvetica,sans-serif",
+                            "elements": {
+                              "1": {
+                                "type": "li",
+                                "content": "$company_name is a proud member of the BBB with A+ rating, so you’re in good hands."
+                              },
+                              "2": {
+                                "type": "li",
+                                "elements": {
+                                  "1": {
+                                    "type": "text",
+                                    "content": "For future reference, your assigned request number is: "
+                                  },
+                                  "2": {
+                                    "type": "strong",
+                                    "content": "$nid"
+                                  },
+                                  "3": {
+                                    "type": "text",
+                                    "content": "."
+                                  },
+                                  "4": {
+                                    "type": "br"
+                                  },
+                                  "5": {
+                                    "type": "text",
+                                    "content": "For faster processing, you can always use this number when contacting us."
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "5": {
+                        "type": "div",
+                        "style": "margin-top:10px;FONT:12px/19px Verdana,Arial,Helvetica,sans-serif;background: rgb(225, 228, 255);padding: 20px;border: 1px solid #DADADA;margin-top: 10px;",
+                        "elements": {
+                          "1": {
+                            "type": "text",
+                            "content": "I have created an account for you, with a username and password:"
+                          },
+                          "2": {
+                            "type": "br"
+                          },
+                          "3": {
+                            "type": "div",
+                            "style": "text-align:center;",
+                            "elements": {
+                              "1": {
+                                "type": "text",
+                                "content": "Login: "
+                              },
+                              "2": {
+                                "type": "strong",
+                                "content": "$to"
+                              },
+                              "3": {
+                                "type": "text",
+                                "content": "Password: "
+                              },
+                              "4": {
+                                "type": "strong",
+                                "content": "$pass"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "2": {
+                "type": "td",
+                "style": "BACKGROUND:#FFFFFF;PADDING-BOTTOM:10px;PADDING-TOP:10px;PADDING-LEFT:10px;PADDING-RIGHT:10px; vertical-align: top; align-content: left",
+                "elements": {
+                  "1": {
+                    "type": "div",
+                    "style": "BACKGROUND:#f8f8f8; padding:20px; padding-top:10px",
+                    "elements": {
+                      "1": {
+                        "type": "h3",
+                        "style": "COLOR:#111111;FONT:bold 12px/15px Verdana,Arial,Helvetica,sans-serif",
+                        "content": "Recent Customers"
+                      },
+                      "2": {
+                        "type": "p",
+                        "style": "COLOR:#111111;FONT:italic 11px/14px Verdana,Arial,Helvetica,sans-serif; max-width: 212px",
+                        "elements": {
+                          "1": {
+                            "type": "text",
+                            "content": "“I want to thank you for your time to bid and provide for the move. The crew was timely, very courteous, efficient and extremely careful with all items. You’re estimate of time was exactly the move time. Your follow up and attention to detail during the bid process was the deciding factor to no go with the lowest bids and to select your company."
+                          },
+                          "2": {
+                            "type": "br"
+                          },
+                          "3": {
+                            "type": "text",
+                            "content": "Thank you again,”"
+                          }
+                        }
                       }
                     }
                   }

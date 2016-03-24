@@ -10,15 +10,15 @@ angular.module('emailBuilderApp')
 
         $scope.templateEmail = [];
 
-        $scope.tempData = null;
+        var tempData = null;
 
         var setTempData = function (value) {
-            $scope.tempData = value;
+            tempData = value;
         };
 
         $scope.dropSuccessHandler = function ($event, index, array) {
-            if ($scope.tempData !== null) {
-                array.splice(index, 1, $scope.tempData);
+            if (tempData !== null) {
+                array.splice(index, 1, tempData);
                 setTempData(null);
             } else {
                 array.splice(index, 1);
