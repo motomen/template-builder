@@ -1,4 +1,5 @@
 <a style="{{element.style}}" href="{{element.href}}">
-    <element-directive ng-repeat="el in element.elements" element="el">
+    {{element.content}}
+    <element-directive ng-if="element.elements != null" ng-repeat="el in element.elements" element="el">
     </element-directive>
 </a>
