@@ -1,0 +1,5 @@
+<h1 style="{{element.style}}">
+    {{element.content}}
+    <element-directive ng-if="element.elements != null" ng-repeat="el in element.elements" element="el">
+    </element-directive>
+</h1>

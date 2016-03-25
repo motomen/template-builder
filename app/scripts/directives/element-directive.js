@@ -16,10 +16,12 @@ angular.module('emailBuilderApp')
             var templateUrl = 'views/tags/';
             var supportedElements = [
                 'a',
+                'b',
                 'br',
                 'button',
                 'div',
                 'em',
+                'h1',
                 'h3',
                 'img',
                 'li',

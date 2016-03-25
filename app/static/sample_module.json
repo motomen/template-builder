@@ -3,7 +3,7 @@
     "name": "My company",
     "typeModule": "header",
     "type": "td",
-    "style": "BORDER-BOTTOM: #dbdbdb 0px hidden; TEXT-ALIGN: center; BORDER-LEFT: #dbdbdb 0px hidden; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: transparent; PADDING-LEFT: 15px; WIDTH: 100%; PADDING-RIGHT: 15px; VERTICAL-ALIGN: top; BORDER-TOP: #dbdbdb 0px hidden; BORDER-RIGHT: #dbdbdb 0px hidden; PADDING-TOP: 0px",
+    "style": "BORDER-BOTTOM: #dbdbdb 0px hidden; TEXT-ALIGN: center; BORDER-LEFT: #dbdbdb 0px solid; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: transparent; PADDING-LEFT: 15px; WIDTH: 100%; PADDING-RIGHT: 15px; VERTICAL-ALIGN: top; BORDER-TOP: #dbdbdb 0px solid; BORDER-RIGHT: #dbdbdb 0px solid; PADDING-TOP: 0px",
     "elements": {
       "1": {
         "type": "a",
@@ -321,6 +321,28 @@
             "style": "width: 150px;",
             "src": "http://www.bostonbestrate.com/assets/img/promove.png",
             "alt": "Moving America Professionally"
+          }
+        }
+      }
+    }
+  },
+  "4": {
+    "name": "My company",
+    "typeModule": "body",
+    "type": "td",
+    "elements": {
+      "1": {
+        "type": "div",
+        "style": "margin-top: -11px;background: white;padding: 20px;padding-top: 0px;FONT:12px/19px Verdana,Arial,Helvetica,sans-serif;",
+        "elements": {
+          "1": {
+            "type": "h1",
+            "style": "font-size: 16px;padding-top: 15px;color: #6F6FFF;",
+            "content": "NEXT STEP"
+          },
+          "2": {
+            "type": "text",
+            "htmlContent": "Your next step is to view your request/account page and add <b>moving details</b> and <b>inventory</b> for your move.<br> These details help me to give you the most accurate estimate and plan our schedule. <br>Our company uses an             advanced reservation system that allows you to book your moves online using your account page. In the meantime I will check our schedule, and update your request account page accordingly. <br> Then, I’ll will contact you shortly via phone or email to discuss your relocation moving needs. You may can also contact me at your earliest convenience AT at: <b>1.877.787.3528 or 617.787.3528</b>, or message us from inside your account."
           }
         }
       }
