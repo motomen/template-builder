@@ -15,24 +15,9 @@ angular.module('emailBuilderApp')
             var type = element.type;
             var templateUrl = 'views/tags/';
             var supportedElements = [
-                'a',
-                'b',
-                'br',
-                'button',
-                'div',
-                'em',
-                'h1',
-                'h3',
-                'img',
-                'li',
-                'p',
-                'span',
-                'strong',
                 'table',
                 'td',
-                'text',
-                'tr',
-                'ul'
+                'tr'
             ];
 
             if (__indexOf.call(supportedElements, type) >= 0) {
@@ -50,7 +35,7 @@ angular.module('emailBuilderApp')
         };
 
         return {
-            //template: '<div ng-bind="element"></div>',
+            controller: 'ElementCtrl',
             restrict: 'EA',
             replace: true,
             scope: {
