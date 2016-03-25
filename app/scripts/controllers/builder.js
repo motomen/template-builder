@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('emailBuilderApp')
-    .controller('BuilderCtrl', ['$scope', 'ModuleService', '$sce', '$log', function ($scope, ModuleService, $sce, $log) {
+    .controller('BuilderCtrl', ['$scope', 'ModuleService', function ($scope, ModuleService) {
         $scope.modules = [];
 
         ModuleService.modules().then(function (modules) {
