@@ -1,9 +1,17 @@
+body {
+    cursor: auto;
+}
+
 .builder-canvas {
     padding: 10px;
     border: 1px solid;
     border-radius: 0;
     margin-right: 10px;
     background-color: white;
+}
+
+.builder-canvas > tr > *:hover {
+    border-color: blue;
 }
 
 .builder-templates {
@@ -13,8 +21,27 @@
     zoom: 38%;
 }
 
+.module-template {
+    cursor: -webkit-grab;
+    /*cursor: -moz-grab;*/
+}
+
+.module-template:active {
+    cursor: -webkit-grabbing;
+
+}
+
 .module-canvas {
     padding: 10px;
 }
 
+.on-drag-enter {
+    /*background-color: #677ba6;*/
+    border: 2px solid;
+    border-color: #677ba6;
+}
 
+.on-drag-hover {
+    border: 2px solid;
+    border-color: #3eb352;
+}
