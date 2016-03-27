@@ -2,7 +2,10 @@
     <div class="col-lg-3 builder-templates">
         <table>
             <tbody>
-            <tr ng-repeat="module in modules" element-directive element="module" ui-draggable="true" drag="module">
+            <tr class="module-template"
+                ng-repeat="module in modules"
+                element-directive element="module"
+                ui-draggable="true" drag="module">
             </tr>
             </tbody>
         </table>
@@ -15,6 +18,7 @@
             <tr ui-draggable="true" drag="partTemplate"
                 on-drop-success="dropSuccessHandler($event,$index,templateEmail)"
                 ui-on-drop="onDrop($event,$data,templateEmail,$index)"
+                drag-image-element-id="$index"
                 element-directive element="partTemplate"
                 ng-repeat="partTemplate in templateEmail">
             </tr>

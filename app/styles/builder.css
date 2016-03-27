@@ -10,8 +10,8 @@ body {
     background-color: white;
 }
 
-.builder-canvas > tr > *:hover {
-    border-color: blue;
+.builder-canvas .block-code-button {
+    visibility: visible;
 }
 
 .builder-templates {
@@ -19,6 +19,10 @@ body {
     border: 1px solid;
     border-radius: 0;
     zoom: 38%;
+}
+
+.builder-templates .block-code-button {
+    visibility: hidden;
 }
 
 .module-template {
@@ -44,4 +48,46 @@ body {
 .on-drag-hover {
     border: 2px solid;
     border-color: #3eb352;
+}
+
+.prevent-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.module-code-button {
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999999;
+    margin-top: -20px;
+}
+
+.code-button {
+    width: 0%;
+    height: 100%;
+    background-color: #cecece;
+    background-image: url(/images/openCodeEditor.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+}
+
+.code-button:hover {
+    background-color: #009fc0;
+}
+
+.block-code-button {
+    position: absolute;
+    left: 100%;
+    margin-left: -15px;
+    margin-top: -19px;
 }
