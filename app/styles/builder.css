@@ -91,3 +91,8 @@ body {
     margin-left: -15px;
     margin-top: -19px;
 }
+
+.code-editor {
+    min-width: 750px;
+    resize: none;
+}

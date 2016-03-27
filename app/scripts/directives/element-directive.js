@@ -3,6 +3,13 @@
 angular.module('emailBuilderApp')
     .directive('elementDirective', ['$http', '$compile', 'ElementService', function ($http, $compile, ElementService) {
         var linker = function ($scope, element) {
+
+            $scope.isVisibleEditor = false;
+
+            $scope.setEditorVisibility = function () {
+                $scope.isVisibleEditor = !$scope.isVisibleEditor;
+            };
+
             $scope.enableStyle = ElementService.emableStyle;
             // Get template content from path
             var templateUrl = ElementService.getTemplateUrl($scope.element);

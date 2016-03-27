@@ -1,7 +1,7 @@
 <tr>
     <td ng-bind-html="enableStyle(element.htmlContent)">
     </td>
-    <tr class="block-code-button">
+    <tr class="block-code-button" ng-click="setEditorVisibility()">
         <td>
             <div class="module-code-button prevent-selection">
                 <div class="code-button" style="width: 100%"></div>
@@ -9,9 +9,9 @@
         </td>
     </tr>
 </tr>
-<tr ng-if="false">
+<tr ng-if="isVisibleEditor">
     <td>
-        <textarea rows="20" wrap="off" style="width: 100%" ng-model="element.htmlContent">
+        <textarea rows="20" wrap="off" class="code-editor" ng-model="element.htmlContent">
         </textarea>
     </td>
 </tr>

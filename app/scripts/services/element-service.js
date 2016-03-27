@@ -11,8 +11,6 @@ var __indexOf = [].indexOf || function (item) {
 
 angular.module('emailBuilderApp')
     .service('ElementService', ['$sce', function ($sce) {
-        var moduleJsonPath = 'static/sample_module.json';
-
         return {
             getTemplateUrl: function (element) {
                 var type = element.type;
