@@ -34,4 +34,8 @@ angular.module('emailBuilderApp')
                 setTempData(null);
             }
         };
+
+        $scope.deleteModule = function (index) {
+            $scope.templateEmail.splice(index, 1);
+        };
     }]);

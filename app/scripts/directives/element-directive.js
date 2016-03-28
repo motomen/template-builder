@@ -10,6 +10,8 @@ angular.module('emailBuilderApp')
                 $scope.isVisibleEditor = !$scope.isVisibleEditor;
             };
 
+            $scope.deleteModule = $scope.$parent.deleteModule;
+
             $scope.enableStyle = ElementService.emableStyle;
             // Get template content from path
             var templateUrl = ElementService.getTemplateUrl($scope.element);
@@ -23,7 +25,8 @@ angular.module('emailBuilderApp')
             restrict: 'EA',
             replace: true,
             scope: {
-                element: '='
+                element: '=',
+                index: '='
             },
             link: linker
         };

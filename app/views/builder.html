@@ -2,7 +2,7 @@
     <div class="col-lg-3 builder-templates">
         <table>
             <tbody>
-            <tr class="module-template"
+            <tr class="drag-cursor"
                 ng-repeat="module in modules"
                 element-directive element="module"
                 ui-draggable="true" drag="module">
@@ -15,11 +15,11 @@
         <table cellspacing='0' border='0' cellpadding='0'
                style='margin:auto;width:750px;background-color: #f7f7f7; border: 1px solid gainsboro;'>
             <tbody>
-            <tr ui-draggable="true" drag="partTemplate"
+            <tr class="drag-cursor" ui-draggable="true" drag="partTemplate"
                 on-drop-success="dropSuccessHandler($event,$index,templateEmail)"
                 ui-on-drop="onDrop($event,$data,templateEmail,$index)"
                 drag-image-element-id="$index"
-                element-directive element="partTemplate"
+                element-directive element="partTemplate" index="$index"
                 ng-repeat="partTemplate in templateEmail">
             </tr>
             </tbody>
