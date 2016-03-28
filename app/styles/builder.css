@@ -2,7 +2,7 @@ body {
     cursor: auto;
 }
 
-.builder-canvas {
+.builder-template {
     padding: 10px;
     border: 1px solid;
     border-radius: 0;
@@ -10,19 +10,27 @@ body {
     background-color: white;
 }
 
-.builder-templates {
+.builder-modules {
     padding: 10px;
     border: 1px solid;
     border-radius: 0;
     zoom: 38%;
 }
 
-.builder-templates .block-code-button {
+.builder-modules .block-code-button {
     visibility: hidden;
 }
 
-.builder-templates .block-delete-button {
+.builder-modules .block-delete-button {
     visibility: hidden;
+}
+
+.preview-module {
+    padding: 100px;
+}
+
+.preview-module:hover {
+    border: 1px solid;
 }
 
 .drag-cursor {

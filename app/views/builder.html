@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-lg-3 builder-templates">
+    <div class="col-lg-3 builder-modules">
         <table>
             <tbody>
-            <tr class="drag-cursor"
+            <tr class="drag-cursor preview-module"
                 ng-repeat="module in modules"
                 element-directive element="module"
                 ui-draggable="true" drag="module">
@@ -11,7 +11,7 @@
         </table>
     </div>
 
-    <div class="col-lg-8 builder-canvas" ui-on-Drop="onDrop($event, $data, template)">
+    <div class="col-lg-8 builder-template" ui-on-Drop="onDrop($event, $data, template)">
         <table cellspacing='0' border='0' cellpadding='0'
                style='margin:auto;width:750px;background-color: #f7f7f7; border: 1px solid gainsboro;'>
             <tbody>
