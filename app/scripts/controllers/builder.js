@@ -8,7 +8,7 @@ angular.module('emailBuilderApp')
             $scope.modules = modules;
         });
 
-        $scope.templateEmail = [];
+        $scope.template = [];
 
         var tempData = null;
 
@@ -36,6 +36,6 @@ angular.module('emailBuilderApp')
         };
 
         $scope.deleteModule = function (index) {
-            $scope.templateEmail.splice(index, 1);
+            $scope.template.splice(index, 1);
         };
     }]);

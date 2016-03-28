@@ -11,16 +11,16 @@
         </table>
     </div>
 
-    <div class="col-lg-8 builder-canvas" ui-on-Drop="onDrop($event,$data,templateEmail)">
+    <div class="col-lg-8 builder-canvas" ui-on-Drop="onDrop($event, $data, template)">
         <table cellspacing='0' border='0' cellpadding='0'
                style='margin:auto;width:750px;background-color: #f7f7f7; border: 1px solid gainsboro;'>
             <tbody>
-            <tr class="drag-cursor" ui-draggable="true" drag="partTemplate"
-                on-drop-success="dropSuccessHandler($event,$index,templateEmail)"
-                ui-on-drop="onDrop($event,$data,templateEmail,$index)"
+            <tr class="drag-cursor module-block" ui-draggable="true" drag="module"
+                on-drop-success="dropSuccessHandler($event, $index, template)"
+                ui-on-drop="onDrop($event, $data, template, $index)"
                 drag-image-element-id="$index"
-                element-directive element="partTemplate" index="$index"
-                ng-repeat="partTemplate in templateEmail">
+                element-directive element="module" index="$index"
+                ng-repeat="module in template">
             </tr>
             </tbody>
         </table>
