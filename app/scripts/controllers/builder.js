@@ -38,4 +38,21 @@ angular.module('emailBuilderApp')
         $scope.deleteModule = function (index) {
             $scope.template.splice(index, 1);
         };
+
+        $scope.isDisplayModules = true;
+        $scope.isDisplayStylePanel = false;
+
+        $scope.displayModules = function () {
+            if (!$scope.isDisplayModules) {
+                $scope.isDisplayModules = true;
+                $scope.isDisplayStylePanel = false;
+            }
+        };
+
+        $scope.displayStylesPanel = function () {
+            if (!$scope.isDisplayStylePanel) {
+                $scope.isDisplayStylePanel = true;
+                $scope.isDisplayModules = false;
+            }
+        };
     }]);

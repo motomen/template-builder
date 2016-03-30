@@ -1,5 +1,21 @@
 <div class="row">
-    <div class="col-lg-3 builder-modules">
+    <div class="col-lg-2">
+        <div class="navbar nav-stacked">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Menu</div>
+                </div>
+                <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><button class="btn btn-primary btn-large" ng-click="displayModules()">Modules</button></li>
+                        <li><button class="btn btn-primary btn-large" ng-click="displayStylesPanel()">Styles panel</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 builder-modules" ng-if="isDisplayModules">
         <table>
             <tbody>
             <tr class="drag-cursor preview-module"
@@ -11,7 +27,11 @@
         </table>
     </div>
 
-    <div class="col-lg-8 builder-template" ui-on-Drop="onDrop($event, $data, template)">
+    <div class="col-lg-3" ng-if="isDisplayStylePanel">
+        <div class="well"> style panel </div>
+    </div>
+
+    <div class="col-lg-7 builder-template" ui-on-Drop="onDrop($event, $data, template)">
         <table cellspacing='0' border='0' cellpadding='0'
                style='margin:auto;width:750px;background-color: #f7f7f7; border: 1px solid gainsboro;'>
             <tbody>

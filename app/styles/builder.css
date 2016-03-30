@@ -2,7 +2,12 @@ body {
     cursor: auto;
 }
 
+.container {
+    width: auto;
+}
+
 .builder-template {
+    width: 780px;
     padding: 10px;
     border: 1px solid;
     border-radius: 0;
