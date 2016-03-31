@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('emailBuilderApp')
-    .directive('elementDirective', ['$http', '$compile', 'ElementService', function ($http, $compile, ElementService) {
+    .directive('module', ['$http', '$compile', 'ElementService', function ($http, $compile, ElementService) {
         var linker = function ($scope, element) {
 
             $scope.isVisibleEditor = false;
@@ -14,7 +14,7 @@ angular.module('emailBuilderApp')
 
             $scope.enableStyle = ElementService.emableStyle;
             // Get template content from path
-            var templateUrl = ElementService.getTemplateUrl($scope.element);
+            var templateUrl = ElementService.getTemplateUrl($scope.module);
             $http.get(templateUrl).then(function (response) {
                 element.html(response.data);
                 $compile(element.contents())($scope);
@@ -25,7 +25,7 @@ angular.module('emailBuilderApp')
             restrict: 'EA',
             replace: true,
             scope: {
-                element: '=',
+                module: '=',
                 index: '='
             },
             link: linker

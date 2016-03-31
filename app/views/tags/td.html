@@ -1,5 +1,5 @@
 <tr>
-    <td draggable="true" ng-bind-html="enableStyle(element.htmlContent)">
+    <td id="module" draggable="true" ng-bind-html="enableStyle(module.htmlContent)">
     </td>
     <tr class="block-code-button visibility-block" ng-click="setEditorVisibility()">
         <td>
@@ -18,7 +18,7 @@
 </tr>
 <tr ng-if="isVisibleEditor">
     <td>
-        <textarea rows="20" wrap="off" class="code-editor" ng-model="element.htmlContent">
+        <textarea rows="20" wrap="off" class="code-editor" ng-model="module.htmlContent">
         </textarea>
     </td>
 </tr>

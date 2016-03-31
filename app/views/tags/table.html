@@ -1,8 +1,8 @@
-<table style="{{element.style}}">
+<table style="{{module.style}}">
     <tbody>
-    <tr ng-repeat="tr in element.elements">
-        <td ng-repeat="td in tr.elements">
-            <element-directive ng-repeat="el in td.elements"  element="el"></element-directive>
+    <tr ng-repeat="tr in module.modules">
+        <td ng-repeat="td in tr.modules">
+            <module ng-repeat="mod in td.modules" module="mod"></module>
         </td>
     </tr>
     </tbody>

@@ -7,42 +7,52 @@
                 </div>
                 <div class="collapse navbar-collapse" id="js-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><button class="btn btn-primary btn-large" ng-click="displayModules()">Modules</button></li>
-                        <li><button class="btn btn-primary btn-large" ng-click="displayStylesPanel()">Styles panel</button></li>
+                        <li>
+                            <button class="btn btn-primary btn-large" ng-click="displayModules()">Modules</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary btn-large" ng-click="displayStylesPanel()">Styles panel
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 builder-modules" ng-if="isDisplayModules">
+    <div class="col-lg-3 builder-modules" ng-show="isDisplayModules">
         <table>
             <tbody>
             <tr class="drag-cursor preview-module"
                 ng-repeat="module in modules"
-                element-directive element="module"
+                module="module"
                 ui-draggable="true" drag="module">
             </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="col-lg-3" ng-if="isDisplayStylePanel">
-        <div class="well"> style panel </div>
+    <div class="col-lg-3" ng-show="isDisplayStylePanel">
+        <div class="well">
+            <module-style-directive template-color="globalColor">
+            </module-style-directive>
+        </div>
     </div>
 
     <div class="col-lg-7 builder-template" ui-on-Drop="onDrop($event, $data, template)">
-        <table cellspacing='0' border='0' cellpadding='0'
-               style='margin:auto;width:750px;background-color: #f7f7f7; border: 1px solid gainsboro;'>
-            <tbody>
-            <tr class="drag-cursor module-block" ui-draggable="true" drag="module"
-                on-drop-success="dropSuccessHandler($event, $index, template)"
-                ui-on-drop="onDrop($event, $data, template, $index)"
-                drag-image-element-id="$index"
-                element-directive element="module" index="$index"
-                ng-repeat="module in template">
-            </tr>
-            </tbody>
-        </table>
+        <style-executor-directive background-color="globalColor">
+            <table cellspacing='0' border='0' cellpadding='0'
+                   style='margin:auto; width:750px; background-color: #f7f7f7; border: 1px solid gainsboro;'>
+                <tbody>
+                <tr class="drag-cursor module-block" ui-draggable="true" drag="module"
+                    on-drop-success="dropSuccessHandler($event, $index, template)"
+                    ui-on-drop="onDrop($event, $data, template, $index)"
+                    drag-image-element-id="$index"
+                    module="module" index="$index"
+                    ng-repeat="module in template">
+                </tr>
+                </tbody>
+            </table>
+        </style-executor-directive>
     </div>
 </div>
