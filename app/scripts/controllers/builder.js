@@ -35,6 +35,10 @@ angular.module('emailBuilderApp')
             }
         };
 
+        $scope.$on('templateRenderFinished', function(ngRepeatFinishedEvent) {
+            $scope.$broadcast('renderFinished');
+        });
+
         $scope.deleteModule = function (index) {
             $scope.template.splice(index, 1);
         };

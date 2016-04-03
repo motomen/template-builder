@@ -34,13 +34,13 @@
 
     <div class="col-lg-3" ng-show="isDisplayStylePanel">
         <div class="well">
-            <module-style-directive template-color="globalColor">
-            </module-style-directive>
+            <style-editor-directive style-object="globalStyle">
+            </style-editor-directive>
         </div>
     </div>
 
     <div class="col-lg-7 builder-template" ui-on-Drop="onDrop($event, $data, template)">
-        <style-executor-directive background-color="globalColor">
+        <style-executor-directive style-object="globalStyle" template = "template" render-finished="renderFinished">
             <table cellspacing='0' border='0' cellpadding='0'
                    style='margin:auto; width:750px; background-color: #f7f7f7; border: 1px solid gainsboro;'>
                 <tbody>
@@ -49,7 +49,8 @@
                     ui-on-drop="onDrop($event, $data, template, $index)"
                     drag-image-element-id="$index"
                     module="module" index="$index"
-                    ng-repeat="module in template">
+                    ng-repeat="module in template"
+                    on-finish-render="templateRenderFinished">
                 </tr>
                 </tbody>
             </table>
