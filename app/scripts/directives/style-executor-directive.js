@@ -3,12 +3,39 @@
 angular.module('emailBuilderApp')
     .directive('styleExecutorDirective', function () {
         var linker = function ($scope, element) {
-            var buildStyleObject = function(elem) {
-                console.log('click' + elem);
+            var currentElement = null;
+
+            var buildStyleObject = function(event) {
+                currentElement = $(this);
+
+                var currentStyle = currentElement[0].attributes[0].value;
+                var styles = currentStyle.split(';');
+                var styleObject = getStyleJSONObject(styles);
+                $scope.styleObject = styleObject;
+            };
+
+            var getStyleJSONObject = function (styles) {
+                var i = styles.length;
+                var result = {};
+                var style, k, v;
+
+                while (i--) {
+                    style = styles[i].split(':');
+                    if (style.length != 2) {
+                        continue;
+                    }
+                    k = style[0].trim();
+                    v = style[1].trim();
+                    if (k.length > 0 && v.length > 0) {
+                        result[k] = v;
+                    }
+                }
+                return result;
             };
 
             $scope.$on('renderFinished', function(ngRepeatFinishedEvent) {
                 var modules = element.find('#module');
+                currentElement = modules;
                 console.log('ngRepeatFinished modules' + modules.length);
                 for (var i = 0; i < modules.length; i++) {
                     var children = modules[i].children;
@@ -19,12 +46,14 @@ angular.module('emailBuilderApp')
                 }
             });
 
-            $scope.$watch('styleObject.div_module_style.value', function (newValue) {
-                var elements = element.find('#module');
-                for (var i = 0; i < elements.length; i++) {
-                    var myEl = angular.element(elements[i]);
-                    if (myEl) {
-                        myEl.css('color', newValue);
+            $scope.$watchCollection('styleObject', function (newValue) {
+                if (currentElement !== null) {
+                    if (currentElement.isArray) {
+                        for (var i = 0; i < currentElement.length; i++) {
+                            currentElement[i].css(newValue);
+                        }
+                    } else {
+                        currentElement.css(newValue);
                     }
                 }
             });
